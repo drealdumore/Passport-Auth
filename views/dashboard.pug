@@ -1,0 +1,93 @@
+extends layout
+
+block content
+
+    div(class='row my-3')
+        div(class='col-12')
+            h1 Dashboard
+
+    .row.mb-2
+        .col-12
+            .display-5 Please click below to link other social accounts
+    
+    .row.mb-2.d-flex.justify-content-around
+
+        .col-6.col-md-4.col-lg-2
+            .card.mb-3(style='max-width: 18rem;')
+                .card-header.text-center.text-primary
+                    .iconsz.px-3
+                        .fa.fa-user
+                .card-body.text-center
+                    h5.card-title Local
+                    if user.local.email
+                        a.btn.btn-sm.btn-danger(href='/unlink/local') Unlink
+                    else
+                        a.btn.btn-sm.btn-success(href='/connect/local') Connect
+                if user.local.email
+                    .card-footer.bg-success.text-white.text-center Connected
+                else
+                    .card-footer.bg-danger.text-white.text-center Not Linked    
+
+        .col-6.col-md-4.col-lg-2
+            .card.mb-3(style='max-width: 18rem;')
+                .card-header.text-center.github-color
+                    .iconsz.px-3
+                        .fa.fa-github
+                .card-body.text-center
+                    h5.card-title Github
+                    if user.github.token
+                        a.btn.btn-sm.btn-danger(href='/unlink/github') Unlink
+                    else
+                        a.btn.btn-sm.btn-success(href='/connect/github') Connect
+                if user.github.token
+                    .card-footer.bg-success.text-white.text-center Connected
+                else
+                    .card-footer.bg-danger.text-white.text-center Not Linked
+
+        .col-6.col-md-4.col-lg-2
+            .card.mb-3(style='max-width: 18rem;')
+                .card-header.text-center.fb-color
+                    .iconsz.px-3
+                        .fa.fa-facebook
+                .card-body.text-center
+                    h5.card-title Facebook
+                    if user.facebook.token
+                        a.btn.btn-sm.btn-danger(href='/unlink/facebook') Unlink
+                    else
+                        a.btn.btn-sm.btn-success(href='/connect/facebook') Connect
+                if user.facebook.token
+                    .card-footer.bg-success.text-white.text-center Connected
+                else
+                    .card-footer.bg-danger.text-white.text-center Not Linked
+
+        .col-6.col-md-4.col-lg-2
+            .card.mb-3(style='max-width: 18rem;')
+                .card-header.text-center.google-color
+                    .iconsz.px-3
+                        .fa.fa-google
+                .card-body.text-center
+                    h5.card-title Google
+                    if user.google.token
+                        a.btn.btn-sm.btn-danger(href='/unlink/google') Unlink
+                    else
+                        a.btn.btn-sm.btn-success(href='/connect/google') Connect
+                if user.google.token
+                    .card-footer.bg-success.text-white.text-center Connected
+                else
+                    .card-footer.bg-danger.text-white.text-center Not Linked
+
+        .col-6.col-md-4.col-lg-2
+            .card.mb-3(style='max-width: 18rem;')
+                .card-header.text-center.tw-color
+                    .iconsz.px-3
+                        .fa.fa-twitter
+                .card-body.text-center
+                    h5.card-title Twitter
+                    if user.twitter.token
+                        a.btn.btn-sm.btn-danger(href='/unlink/twitter') Unlink
+                    else
+                        a.btn.btn-sm.btn-success(href='/connect/twitter') Connect
+                if user.twitter.token
+                    .card-footer.bg-success.text-white.text-center Connected
+                else
+                    .card-footer.bg-danger.text-white.text-center Not Linked

@@ -1,0 +1,36 @@
+{
+  "name": "passport-auth",
+  "version": "1.0.0",
+  "description": "Authentication using passport",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "passport",
+    "local"
+  ],
+  "author": "Dave Fernandes",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.1",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.19.2",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.13.20",
+    "nodemon": "^2.0.20",
+    "passport": "^0.6.0",
+    "passport-facebook": "^3.0.0",
+    "passport-github": "^1.1.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4",
+    "pug": "^3.0.3"
+  }
+}

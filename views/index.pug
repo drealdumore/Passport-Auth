@@ -1,0 +1,57 @@
+extends layout
+
+block content
+
+    div(class='row my-4')
+        div(class='col-12')
+            h1 Authentication Strategies using nodeJS and <a href='https://www.npmjs.com/package/passport' target='_blank' rel='noopener noreferrer'>Passport</a>
+
+    div(class='row my-4')
+        .col-6.col-md-4
+            a.card.p-4.mb-4.text-decoration-none.bg-light(href='/login')
+                .row
+                    .iconsz.px-3
+                        .fa.fa-user
+                    .pl-3
+                        .display-5.mt-1.font-weight-bold Local
+                        .text-muted Login
+        .col-6.col-md-4
+            a.card.p-4.mb-4.text-decoration-none.bg-light(href='/register')
+                .row
+                    .iconsz.px-3
+                        .fa.fa-envelope
+                    .pl-3
+                        .display-5.mt-1.font-weight-bold Local
+                        .text-muted Register
+        .col-6.col-md-4
+            a.card.p-4.mb-4.text-decoration-none.bg-light.github-color(href='/auth/github')
+                .row
+                    .iconsz.px-3
+                        .fa.fa-github
+                    .pl-3
+                        .display-5.mt-1.font-weight-bold Github
+                        .text-muted Login
+        .col-6.col-md-4
+            a.card.p-4.mb-4.text-decoration-none.bg-light.fb-color(href='/auth/facebook')
+                .row
+                    .iconsz.px-3
+                        .fa.fa-facebook
+                    .pl-3
+                        .display-5.mt-1.font-weight-bold Facebook
+                        .text-muted Login
+        .col-6.col-md-4
+            a.card.p-4.mb-4.text-decoration-none.bg-light.google-color(href='/auth/google')
+                .row
+                    .iconsz.px-3
+                        .fa.fa-google
+                    .pl-3
+                        .display-5.mt-1.font-weight-bold Google
+                        .text-muted Login
+        .col-6.col-md-4
+            a.card.p-4.mb-4.text-decoration-none.bg-light.tw-color(href='/auth/twitter')
+                .row
+                    .iconsz.px-3
+                        .fa.fa-twitter
+                    .pl-3
+                        .display-5.mt-1.font-weight-bold Twitter
+                        .text-muted Login

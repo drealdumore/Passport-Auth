@@ -1,0 +1,6 @@
+.env
+.eslintrc
+.prettierrc
+server.cert
+server.key
+/node_modules

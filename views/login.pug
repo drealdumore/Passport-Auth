@@ -1,0 +1,31 @@
+extends layout
+
+block content
+
+    nav.my-2(aria-label='breadcrumb')
+        ol.breadcrumb.py-2.px-3
+            li.breadcrumb-item
+                a(href='/') Home
+            li.breadcrumb-item.active(aria-current='page') Login
+
+    div(class='row my-3')
+        div(class='col-12')
+            h1 Login
+            
+            if message.length > 0
+                .alert.alert-danger #{message}
+            
+            form(action='/login', method='post')
+                .form-group
+                    label Email
+                    input.form-control(type="email",name="email",required)
+                .form-group
+                    label Password
+                    input.form-control(type="password",name="password",required)
+                
+                button.btn.btn-primary(type='submit') Login
+            br
+            hr
+            | Do not have an account ?
+            br
+            a.btn.btn-sm.btn-success(href='/register') Register Here

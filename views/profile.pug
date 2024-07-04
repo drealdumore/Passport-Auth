@@ -1,0 +1,92 @@
+extends layout
+
+block content
+
+    div(class='row my-3')
+        div(class='col-12')
+            h1 Profile
+
+    .row.mb-2       
+        .col-6.col-md-4
+            .card.card-default.mt-2
+                .card-header.text-white.bg-primary Local Information
+                .card-body
+                    p
+                        strong id
+                        |  #{user._id}
+                        if user.local.email
+                            br
+                            strong email
+                            |  #{user.local.email}
+
+        .col-6.col-md-4
+            .card.card-default.mt-2
+                .card-header.github-bg Github Information
+                .card-body
+                    p
+                        if user.github.id
+                            strong id
+                            |  #{user.github.id}
+                        if user.github.email
+                            br
+                            strong email
+                            |  #{user.github.email}
+                        if user.github.name
+                            br
+                            strong name
+                            |  #{user.github.name}
+                        if user.github.username
+                            br
+                            strong username
+                            |  #{user.github.username}
+
+        .col-6.col-md-4
+            .card.card-default.mt-2
+                .card-header.fb-bg Facebook Information
+                .card-body
+                    p
+                        if user.facebook.id
+                            strong id
+                            |  #{user.facebook.id}
+                        if user.facebook.email
+                            br
+                            strong email
+                            |  #{user.facebook.email}
+                        if user.facebook.name
+                            br
+                            strong name
+                            |  #{user.facebook.name}
+
+        .col-6.col-md-4
+            .card.card-default.mt-2
+                .card-header.google-bg Google Information
+                .card-body
+                    p
+                        if user.google.id
+                            strong id
+                            |  #{user.google.id}
+                        if user.google.email
+                            br
+                            strong email
+                            |  #{user.google.email}
+                        if user.google.name
+                            br
+                            strong name
+                            |  #{user.google.name}
+      
+        .col-6.col-md-4
+            .card.card-default.mt-2
+                .card-header.tw-bg Twitter Information
+                .card-body
+                    p
+                        if user.twitter.id
+                            strong id
+                            |  #{user.twitter.id}
+                        if user.twitter.displayName
+                            br
+                            strong display name
+                            |  #{user.twitter.displayName}
+                        if user.twitter.username
+                            br
+                            strong username
+                            |  #{user.twitter.username}

@@ -1,0 +1,77 @@
+body {
+  font-family: 'Dosis', sans-serif;
+}
+main {
+  min-height: 60vh;
+}
+.lib-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+.lib-header-txt {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.display-5 {
+  font-size: 1.8rem;
+}
+@media (max-width: 768px) {
+  .display-5 {
+    font-size: 1.8rem;
+  }
+}
+
+/*
+ * Footer
+ */
+.lib-footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 0.05rem solid #e5e5e5;
+}
+.lib-footer p:last-child {
+  margin-bottom: 0;
+}
+
+.iconsz {
+  font-size: 50px;
+}
+
+.github-color {
+  color: #24292e;
+}
+.github-bg {
+  color: #ffffff;
+  background-color: #24292e;
+}
+
+.fb-color {
+  color: #3b5998;
+}
+.fb-bg {
+  color: #ffffff;
+  background-color: #3b5998;
+}
+
+.tw-color {
+  color: #1da1f2;
+}
+.tw-bg {
+  background-color: #1da1f2;
+  color: #ffffff;
+}
+
+.google-color {
+  color: #db4a39;
+}
+.google-bg {
+  color: #ffffff;
+  background-color: #db4a39;
+}
+
+.bg-connected {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
